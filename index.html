@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<title>
+		Calculater
+	</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row align-center justify-content-center">
+			<div class="col-12 col-md-8 col-sm-8 col-lg-4 pt-4">
+				<div class="fd col-12 pt-4 text-center">
+	<input type="text" name="txt" class="inpu text-end">
+	<div class="p-2">
+	<button class=" fs-3" onclick="clk('+')">+</button>
+	<button class=" fs-3"onclick="clk('-')">-</button>
+	<button class=" fs-3"onclick="clk('/')">/</button>
+	<button class=" fs-3"onclick="clk('*')">*</button>
+	</div>
+	<div class="p-2">
+	<button class=" fs-3"onclick="clk('%')">%</button>
+	<button class=" fs-3"onclick="clk('9')">9</button>
+	<button class=" fs-3"onclick="clk('8')">8</button>
+	<button class=" fs-3"onclick="clk('7')">7</button>
+	</div>
+	<div class="p-2">
+	<button class=" fs-3"onclick="clk('6')">6</button>
+	<button class=" fs-3"onclick="clk('5')">5</button>
+	<button class=" fs-3"onclick="clk('4')">4</button>
+	<button class=" fs-3"onclick="clk('3')">3</button>
+	</div>
+	<div class="p-2">
+	<button class=" fs-3 "onclick="clk('2')">2</button>
+	<button class=" fs-3 "onclick="clk('1')">1</button>
+	<button class=" fs-3 "onclick="clk('0')">0</button>
+	<button class="fs-3" onclick="clk('.')">.</buttontton>
+	</div>
+	<div class="p-2">
+		<button class=" fs-3 "onclick="dlt()" >Dlt</button>
+	<button class=" fs-3 bg-danger" onclick="clr()">Clr</button>
+	<button class=" fs-3" onclick="evl()">=</button>
+		</div>
+	</div>
+        </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    	let ss=document.getElementsByTagName('input')[0]
+    	function clk(l){
+    		ss.value+=l
+    	}
+    	function clr(){
+    		ss.value=""
+    	}
+    	function dlt(){
+    		let slp=ss.value.slice(0,-1)
+    		ss.value=slp
+    	}
+    	function evl(){
+    		let out=eval(ss.value)
+    			ss.value=out
+    		}
+    </script>
+</body>
+</html>

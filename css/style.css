@@ -1,0 +1,38 @@
+.container{
+	text-align: center;
+}
+button:active{
+	transform: scale(.9);
+/*	border: 2px solid black;*/
+}
+button{
+
+	/*display: flex;*/
+	/*align-items: center;*/
+	/*justify-content: space-between;*/
+	height: 50px;
+	width: 75px;
+	border: none;
+	background-color: #3500ff8f;
+	border-radius: 20px!important;
+	
+}
+button:hover{
+	color: blue;
+	background-color: #ffffffc9;
+}
+.fd{
+	background-color: #00c1ffd1; 
+	border-radius: 20px;
+}
+.inpu:focus{
+outline: none;
+}
+input{
+	width: 300px;
+	height:80px;
+	font-size: 25px!important;
+	border: none;
+	padding-right: 15px;
+	box-shadow:inset -5px -5px 7px black;
+}
